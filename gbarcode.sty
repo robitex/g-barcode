@@ -48,7 +48,7 @@
 
 % comando di generazione definizione
 % thanks to Enrico Gregorio 
-\def\\gbarcode@defsym#1{\@namedef{gbarcode@sym@\detokenize{#1}}}% syntactic sugar
+\def\gbarcode@defsym#1{\@namedef{gbarcode@sym@\detokenize{#1}}}% syntactic sugar
 
 \def\gbarcode@parsechar#1{%
   \ifx#1\@nil\else
@@ -75,7 +75,7 @@
    \gbarcode@sym@star@char
 }
 
-\\gbarcode@defsym{0}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{0}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -100,7 +100,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{2}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{2}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -126,7 +126,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{3}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{3}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -150,7 +150,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{4}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{4}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -176,7 +176,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{5}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{5}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -202,7 +202,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{6}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{6}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -227,7 +227,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{7}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{7}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -251,7 +251,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{8}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{8}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -277,7 +277,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{A}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{A}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -302,7 +302,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{C}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{C}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -326,7 +326,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{B}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{B}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -352,7 +352,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{E}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{E}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -378,7 +378,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{D}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{D}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -404,7 +404,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{G}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{G}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -428,7 +428,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{F}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{F}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -453,7 +453,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{I}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{I}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -480,7 +480,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{9}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{9}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -507,7 +507,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{K}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{K}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -532,7 +532,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{J}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{J}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -557,7 +557,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{M}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{M}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -581,7 +581,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{L}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{L}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -607,7 +607,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{O}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{O}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -633,7 +633,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{N}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{N}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -659,7 +659,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{Q}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{Q}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -683,7 +683,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{P}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{P}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -708,7 +708,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{S}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{S}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -735,7 +735,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{R}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{R}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -761,7 +761,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{U}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{U}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -786,7 +786,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{T}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{T}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -811,7 +811,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{W}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{W}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -835,7 +835,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{V}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{V}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -861,7 +861,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{Y}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{Y}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -887,7 +887,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{X}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{X}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -913,7 +913,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{Z}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{Z}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -938,7 +938,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{1}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{1}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -963,7 +963,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{H}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{H}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -989,7 +989,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{ }{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{ }{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -1016,7 +1016,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{+}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{+}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -1039,7 +1039,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{\%}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{\%}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -1062,7 +1062,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{-}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{-}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -1086,7 +1086,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@BStep}
 
-\\gbarcode@defsym{$}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{$}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -1109,7 +1109,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{/}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{/}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}
@@ -1132,7 +1132,7 @@
 \pgfusepath{stroke}
 \advance\gbarcode@x\gbarcode@bStep}
 
-\\gbarcode@defsym{.}{\advance\gbarcode@x\gbarcode@BStep
+\gbarcode@defsym{.}{\advance\gbarcode@x\gbarcode@BStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@B}
@@ -1159,7 +1159,7 @@
 \advance\gbarcode@x\gbarcode@bStep}
 
 % delimiter char for code39 barcode
-\\gbarcode@defsym{star@char}{\advance\gbarcode@x\gbarcode@bStep
+\gbarcode@defsym{star@char}{\advance\gbarcode@x\gbarcode@bStep
 \pgfpathmoveto{\pgfpoint{\gbarcode@x}{0pt}}
 \pgfpathlineto{\pgfpoint{\gbarcode@x}{\gbarcode@h}}
 \pgfsetlinewidth{\gbarcode@b}

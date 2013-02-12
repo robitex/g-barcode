@@ -4,7 +4,7 @@ A barcode library for PGF/TikZ TeX package.
 
 How it works
 ============
-The g-barcode TeX package produces the \pgfbarcode{<code>} macro to insert into
+The g-barcode TeX package produces the \pgfbarcode{`code`} macro to insert into
 a LaTeX source file. After the compilation with pdflatex, you achieve the pdf file.
 At the moment only the code39 1D format is supported.
 
@@ -13,8 +13,8 @@ graphic bundle. With it you achieve a Postscript file that can be convert into p
 
 Code example
 ============
-To draw the barcode corresponding to the text ´0123456789´ you must insert
-the macro in a ´tikzpicture´ or in a ´pgfpicture´ LaTeX environment:
+To draw the barcode corresponding to the text `0123456789` you must insert
+the macro in a `tikzpicture` or in a `pgfpicture` LaTeX environment:
 ````
 \begin{tikzpicture}
 \pgfbarcode{0123456789}
