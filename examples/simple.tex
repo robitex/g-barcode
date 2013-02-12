@@ -1,0 +1,30 @@
+\documentclass{minimal}
+\usepackage{tikz}
+\usepackage{gbarcode}
+
+\def\mydata{12345678}
+
+\begin{document}
+
+This symbol is the \emph{code39} barcode of the value \texttt{\mydata}:
+\begin{tikzpicture}
+\draw[->] (0,0) -- (2,2);
+
+\begin{pgfscope}
+\pgftransformshift{\pgfpoint{2cm}{2cm}}
+\expandafter\pgfbarcode\expandafter{\mydata}
+\end{pgfscope}
+\end{tikzpicture}
+
+Now, in the same figure we draw two barcode: below is \texttt{ABC123} and above is \texttt{DEF456}:
+\begin{tikzpicture}
+\pgfbarcode{ABC123}
+
+\begin{pgfscope}
+\pgftransformshift{\pgfpoint{0}{10mm}}
+\pgfbarcode{DEF456}
+\end{pgfscope}
+
+\draw[blue,line width=1pt] (0,0)--(0,1);
+\end{tikzpicture}
+\end{document}
